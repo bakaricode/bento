@@ -6,6 +6,7 @@ import fiveStarImage from './assets/illustration-five-stars.webp';
 import growFollowersImage from './assets/illustration-grow-followers.webp';
 import multiplePlatformsImage from './assets/illustration-multiple-platforms.webp';
 import schedulePostsImage from './assets/illustration-schedule-posts.webp';
+import { defineConfig } from 'vite';
 
 function App() {
   return (
@@ -63,3 +64,10 @@ function App() {
 }
 
 export default App;
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      external: ['react-router-dom']
+    }
+  }
+});
