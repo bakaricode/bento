@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #fffffff0;
+  font-family: "DM Sans", sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+img {
+  margin: auto;
+  width: 60%;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  align-content: center;
+  margin: 16px;
+  padding: 8px;
+  text-align: center;
+  border-radius: 8px;
+}
+.card1 {
+  background-color: #7551DC;
+  color: #FFFFFF;
+}
+
+.card2 {
+  background-color: #FFFFFF;
+  color: #121212;
+}
+
+.card3 {
+  background-color: #FFCC6A;
+  color: #121212;
+}
+
+.card4 {
+  background-color: #DBD1FC;
+  color: #121212;
+}
+
+.card5 {
+  background-color: #7551DC;
+  color: #FFFFFF;
+}
+
+.card6 {
+  background-color: #FFFFFF;
+  color: #121212;
+}
+
+.card7 {
+  background-color: #F9EEE2;
+  color: #121212;
+}
+
+.card8 {
+  background-color: #FFCC6A;
+  color: #121212;
+}
+
+.textPreset1 {
+  font-size: 62px;
+  line-height: 93.5%;
+  letter-spacing: 3px;
+}
+
+.textPreset2 {
+  font-size: 40px;
+  line-height: 90%;
+  letter-spacing: 2px;
+}
+
+.textPreset3 {
+  font-size: 32px;
+  line-height: 87.5%;
+  letter-spacing: 2px;
+}
+
+.textPreset4 {
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: 0px;
+}
+
+.yellow {
+  color: #FFCC6A;
+}
+
+.purple {
+  color: #7551DC;
+}
+
+@media (min-width:768px)  {
+  
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "fiveStar fiveStar"
+    "fiveStar fiveStar"
+    "multiplePlatformsImage consistentScheduleImage"
+    "multiplePlatformsImage consistentScheduleImage"
+    "schedulePostsImage schedulePostsImage"
+    "schedulePostsImage schedulePostsImage"
+    "schedulePostsImage schedulePostsImage"
+    "growFollowersImage growFollowersImage"
+    "growFollowersImage growFollowersImage"
+    "audienceGrowthImage audienceGrowthImage"
+    "createPostImage aiImage"
+    "createPostImage aiImage";
+    margin: 16px;
+    padding: 8px;
+    align-items: center;
+  } 
+
+  #fiveStar {
+    grid-area: fiveStar;
+  }
+
+  #multiplePlatformsImage {
+    grid-area: MultiplePlatformsImage;
+  }
+
+  #consistentScheduleImage {
+    grid-area: consistentScheduleImage;
+  }
+
+  #schedulePostsImage {
+    grid-area: schedulePostsImage;
+  }
+
+  #growFollowersImage {
+    grid-area: growFollowersImage;
+  }
+
+  #audienceGrowthImage {
+    grid-area: audienceGrowthImage;
+  }
+
+  #createPostImage {
+    grid-area: createPostImage;
+  }
+
+  #aiImage {
+    grid-area: aiImage;
+  }
+}
+
+@media (min-width:1440px) {
+  
+  .cardContainer {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "createPostImage fiveStar fiveStar schedulePostsImage"
+    "createPostImage fiveStar fiveStar schedulePostsImage"
+    "createPostImage multiplePlatformsImage consistentScheduleImage schedulePostsImage"
+    "aiImage multiplePlatformsImage  consistentScheduleImage schedulePostsImage"
+    "aiImage audienceGrowthImage growFollowersImage growFollowersImage"
+    "aiImage audienceGrowthImage growFollowersImage growFollowersImage";
+    margin: 16px;
+    padding: 8px;
+    align-items: center;
+  } 
+
+  .card {
+    max-height: 100%;
+  }
+  #fiveStar {
+    grid-area: fiveStar;
+  }
+
+  #multiplePlatformsImage {
+    grid-area: MultiplePlatformsImage;
+    padding-bottom: 15rem;
+    padding-top: 15rem;
+  }
+
+  #consistentScheduleImage {
+    grid-area: consistentScheduleImage;
+  }
+
+  #schedulePostsImage {
+    grid-area: schedulePostsImage;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+  }
+
+  #growFollowersImage {
+    grid-area: growFollowersImage;
+  }
+
+  #audienceGrowthImage {
+    grid-area: audienceGrowthImage;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+
+  #createPostImage {
+    grid-area: createPostImage;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+
+  #aiImage {
+    grid-area: aiImage;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
